@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlamUp Cosmetics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="">
+            <h2>GlamUp Cosmetics</h2>
+        </div>
+
+        <div class="search-box">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search makeup...">
+        </div>
+
+        <nav class="menu">
+            <a href="#">Categories</a>
+            <a href="shop.html" target="_blank" class="shop">Shop</a>
+            <a href="#">Contact</a>
+            <a href="#">
+                <i class="fa fa-shopping-bag"></i>
+                <span class="badge">2</span>
+            </a>
+            <a href="email.html" target="_parent">Login</a>
+        </nav>
+    </header>
+
+    <style>
+        .menu {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            font-size: 18px;
+        }
+        .shop {
+            margin-right: 40px;
+        }
+    </style>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Special for <span>Today</span></h1>
+            <p>Discover premium makeup collections that enhance your natural beauty.</p>
+
+            <button class="shop-btn">Shop Now →</button>
+        </div>
+
+        <div class="hero-right">
+            <img src="https://i.pinimg.com/1200x/46/99/08/4699081d339d1e1610e38cfaebe54e42.jpg">
+        </div>
+    </section>
+
+    <!-- CATEGORY BUTTONS -->
+    <section class="shop-category">
+        <h2 class="title">Shop by Category</h2>
+
+        <div class="category-buttons">
+            <button class="category-btn active" data-category="all">All Products</button>
+            <button class="category-btn" data-category="lips">Lip</button>
+            <button class="category-btn" data-category="eyes">Eyes</button>
+            <button class="category-btn" data-category="sunscreen">Sunscreen</button>
+            <button class="category-btn" data-category="scrub">Scrub</button>
+            <button class="category-btn" data-category="lotion">Lotion</button>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <div class="product-container">
+
+        <h3>Lips</h3>
+        <div class="product-column">
+            <div class="product-item" data-category="lips">
+                <img src="https://i.pinimg.com/736x/aa/52/e8/aa52e89eeaa39c1f30f4f6df601ee62d.jpg">
+                <p>Lipstick 1</p>
+            </div>
+
+            <div class="product-item" data-category="lips">
+                <img src="https://i.pinimg.com/1200x/1c/c9/6b/1cc96bf77d58cb7a413154338bd0a67e.jpg">
+                <p>Lipstick 2</p>
+            </div>
+
+            <div class="product-item" data-category="lips">
+                <img src="https://i.pinimg.com/1200x/10/eb/95/10eb952eef13d344fe517acd5e2bc945.jpg">
+                <p>Lipstick 3</p>
+            </div>
+
+            <div class="product-item" data-category="lips">
+                <img src="https://i.pinimg.com/736x/ad/91/a9/ad91a9b266bd463a270072d72586eb0c.jpg">
+                <p>Lipstick 4</p>
+            </div>
+        </div>
+
+        <!-- EYES -->
+        <h3>Eyes</h3>
+        <div class="product-column">
+            <div class="product-item" data-category="eyes">
+                <img src="https://i.pinimg.com/736x/e5/39/6f/e5396fb2d3dafef0f816117254fabc2e.jpg">
+                <p>Eye makeup 1</p>
+            </div>
+
+            <div class="product-item" data-category="eyes">
+                <img src="https://i.pinimg.com/736x/fc/e1/6e/fce16edaafb7dba45e870cd025c22b1a.jpg">
+                <p>Eye makeup 2</p>
+            </div>
+
+            <div class="product-item" data-category="eyes">
+                <img src="https://i.pinimg.com/1200x/71/95/b9/7195b9ccaca7f6e4457e4ba6a35f3c04.jpg">
+                <p>Eye makeup 3</p>
+            </div>
+        </div>
+
+        <!-- SUNSCREEN -->
+        <h3>Sunscreen</h3>
+        <div class="product-column">
+            <div class="product-item" data-category="sunscreen">
+                <img src="https://i.pinimg.com/736x/f0/a8/0e/f0a80edcf1f51b33bc68bbb82b896109.jpg">
+                <p>Sunscreen 1</p>
+            </div>
+
+            <div class="product-item" data-category="sunscreen">
+                <img src="https://i.pinimg.com/736x/ee/fb/ce/eefbcedb08df35dfacd5b080488a2d8e.jpg">
+                <p>Sunscreen 2</p>
+            </div>
+        </div>
+
+        <!-- LOTION -->
+        <h3>Lotion</h3>
+        <div class="product-column">
+            <div class="product-item" data-category="lotion">
+                <img src="https://i.pinimg.com/1200x/45/20/40/452040a64acfaf26ee9755f7b7e176c4.jpg">
+                <p>Lotion 1</p>
+            </div>
+
+            <div class="product-item" data-category="lotion">
+                <img src="https://i.pinimg.com/736x/ab/80/54/ab805473054b9a2daae5be99e14da57a.jpg">
+                <p>Lotion 2</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

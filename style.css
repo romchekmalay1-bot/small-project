@@ -1,0 +1,321 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color:rgb(228, 225, 226); /* your website background */
+}
+
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    background-color: transparent; /* ensures transparency */
+    width: 50px;
+    height: auto;
+}
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 30px;
+    width: 350px;
+}
+
+.search-box i {
+    margin-right: 10px;
+    color: gray;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.menu a {
+    margin-left: 25px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+.badge {
+    background: #ff004f;
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-size: 12px;
+    position: absolute;
+    top: -10px;
+    right: -12px;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+}
+
+.hero-left {
+    max-width: 45%;
+}
+
+.hero-left h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.hero-left h1 span {
+    color: #ff2d75;
+}
+
+.hero-left p {
+    margin: 20px 0;
+    color: #555;
+    font-size: 18px;
+}
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.shop-btn {
+    background: #ff2d75;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero-right img {
+    width: 530px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.category-btn {
+    padding: 8px 15px;
+    border: none;
+    background: #ff6aa5;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.category-btn.active {
+    background: #ff2d7d;
+}
+.category-btn:hover {
+    background-color: #e099b1;
+    color: #fff;
+    border-color: #de96ae;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.product-column {
+    display: flex;
+    flex-direction: column; /* vertical direction */
+    gap: 20px; /* space between items */
+    width: 200px; /* control width of column */
+}
+
+.product-item {
+    width: 150px; /* កំណត់ទំហំតូច */
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product-item img {
+    width: 200%;
+    height: 300px;        /* ស្មើគ្នាទាំងអស់ */
+    object-fit: cover;     /* រូបភាពមិនបាត់បង់ aspect ratio */
+    border-radius: 10px;
+}
+
+.product-item p {
+    margin-top: 10px;
+    font-size: 10px;       /* ឲ្យរូបស្អាតល្មម */
+    color: #333;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.product-card img {
+    width: 50%;
+    height: 2500px;
+    object-fit: cover;
+}
+
+.category {
+    font-size: 14px;
+    color: #666;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rating {
+    color: #555;
+}
+
+.add-btn {
+    background:white;
+    color:white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background:#ece0e4;   /* THIS CHANGES YOUR BACKGROUND */
+}
+
+
+/* Center box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+/* Box style */
+.login-box {
+    background: white;
+    width: 320px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Input fields */
+.input-box {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Password row with eye icon */
+.password-group {
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #106466;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #0d5252;
+}
+
+.forgot {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+    font-size: 14px;
+    text-align: center;
+}
+.category-buttons {
+    margin-top: 10px;
+}
+
+.category-btn {
+    display: block;
+    width: 160px;
+    padding: 10px 0;
+    margin-bottom: 12px;   /* ចន្លោះចុះក្រោម */
+    background: #ff4b82;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 15px;
+}
+
+.category-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.category-btn:hover {
+    background: #e43b73;
+}
+
+
+
+
+
+

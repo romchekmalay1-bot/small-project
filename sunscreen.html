@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- TOP FILTER BAR -->
+<div class="top-bar">
+</div>
+
+<!-- PRODUCTS SECTION -->
+<section>
+         <div class="container">
+        <h1>Shop</h1>
+        <p> protect sun light</p>
+
+        <div class="grid">
+
+            <!-- PRODUCT 1 -->
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/8f/26/a9/8f26a95e9b4206979d9064053f3a3a95.jpg">
+                <h3>Ahjo</h3>
+                <p class="price">$7</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <!-- PRODUCT 1 -->
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/6d/86/80/6d868001b3a0825f7e8777bf5bd26a36.jpg">
+                <h3>2 in 1</h3>
+                <p class="price">$6</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+
+           
+
+            <!-- PRODUCT 3 -->
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/cf/a0/13/cfa0131b0c991b52122837bbe6c64029.jpg">
+                <h3>Miss</h3>
+                <p class="price">$10</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+
+            <!-- PRODUCT 4 -->
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/9a/8f/c9/9a8fc9857f757f5d827cdc620269464a.jpg">
+                <h3>to ne</h3>
+                <p class="price">$6</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+
+            <!-- PRODUCT 5 -->
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/ae/be/06/aebe06ce0f036cf9e0accd01ffa12165.jpg">
+                <h3> miss</h3>
+                <p class="price">$10</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+
+              <!-- PRODUCT 6 -->
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/98/90/3e/98903ef671d29b5d590820475f74ef4c.jpg">
+                <h3>spf</h3>
+                <p class="price">$2</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/8d/43/29/8d432972d4320f35afd816dfed6fed38.jpg">
+                <h3>YSL</h3>
+                <p class="price">$10</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/c4/e0/5f/c4e05f1678349710a2d193a48f56c107.jpg">
+                <h3>cosex</h3>
+                <p class="price">$12</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/2c/8d/be/2c8dbe6f15f11cd6eae9d93b4575fed2.jpg">
+                <h3>jill leen</h3>
+                <p class="price">$8</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+             <div class="card">
+                <img src="https://i.pinimg.com/1200x/9b/a2/c1/9ba2c1c194e2138397f03e2e4c86439d.jpg">
+                <h3>dolei</h3>
+                <p class="price">$18</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            
+             <div class="card">
+                <img src="https://i.pinimg.com/1200x/88/08/8e/88088e270d9ffe06adf9dd50ac8cf348.jpg">
+                <h3>Aloe</h3>
+                <p class="price">$8</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            
+             <div class="card">
+                <img src="https://i.pinimg.com/1200x/77/e8/cf/77e8cfaacb72378a0c4295e1b8c7a8ee.jpg">
+                <h3>romand</h3>
+                <p class="price">$15</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            
+           
+
+        </div>
+
+        <!-- RESET BUTTON WITH CONFIRM -->
+         <a href="index.html" class="reset-btn" onclick="return confirmLeave()">Reset</a>
+
+
+    </div>
+
+</section>
+
+   
+    <title>Shop Page</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        p {
+            color: #777;
+        }
+
+        /* Product Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background:white;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 10px 0 6px;
+            font-size: 18px;
+        }
+
+        .card .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .reset-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 20px;
+            background: #ff2975;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+
+        .card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+    </style>
+    
+</head>
+
+<body>
+
+
+   
+<body>
+
+    <a href="index.html"></a>
+    
+
+   
+</body>
+</html>

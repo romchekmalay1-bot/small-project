@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        .navbar {
+            width: 100%;
+            padding: 20px 50px;
+            background: #fde6f1;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .menu a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: rgb(231, 173, 173);
+            font-size: 18px;
+        }
+
+        /* Shop Section */
+        .shop-container {
+            width: 90%;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .shop-container h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+
+        .shop-container p {
+            color: rgb(103, 95, 95);
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* Search + Filters */
+        .filter-bar {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+
+        .filter-bar input,
+        .filter-bar select,
+        .filter-bar button {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        .filter-bar button {
+            background: white;
+            cursor: pointer;
+            margin: 0 auto; /* centers the button horizontally */
+            display: block; /* make it a block-level element */
+        }
+
+
+        button {
+            background: white;
+            cursor: pointer;
+            justify-content:center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo"> GlamUp Cosmetics</div>
+        <div class="menu">
+            <a href="#">Categories</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+        </div>
+    </div>
+
+    <!-- Shop Section -->
+    <div class="shop-container">
+
+        <h2>Shop  by category </h2>
+        <div class="category-buttons">
+        <button class="category-btn active" data-category="all">All Products</button><br>
+        <button class="category-btn active" data-category="lips"><a href="lip.html" target="_parent">Lip</a></button><br> <br>
+        <button class="category-btn active" data-category="eyes"><a href="eyes.html" target="_parent">eyes</a></button><br>
+        <button class="category-btn" data-category="sun sunscreen"><a href="sunscreen.html" target="_parent">sun sunscreen</a></button><br>
+        <button class="category-btn" data-category="srub"><a href="srub.html" target="_parent"> scrub</a></button><br>
+       
+    </div>
+            <script src="script.js"></script>
+
+        </div>
+
+    </div>
+
+
+    <style>
+        /* Container for category buttons */
+.category-buttons {
+    display: flex;
+    justify-content: center; /* centers all buttons horizontally */
+    gap: 20px; /* space between buttons */
+    margin-top: 30px;
+}
+
+/* Buttons style */
+.category-buttons button {
+    background-color: #ff4da6;
+    color: white;
+    border: 10px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 23px; 
+}
+        .category-btn:hover {
+            background-color: #ff4fa3; /* darker pink */
+        }
+
+        /* If you want the <a> text white */
+        .category-btn a {
+            color: white;
+            text-decoration: 10px;
+        }
+    </style>
+</head>
+<body>
+   
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- TOP FILTER BAR -->
+<div class="top-bar">
+</div>
+
+<!-- PRODUCTS SECTION -->
+<section>
+         <div class="container">
+        <h1>Shop</h1>
+        <p>Best user scrub</p>
+
+        <div class="grid">
+
+            <!-- PRODUCT 1 -->
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/78/f9/1b/78f91b87352e3eaf5eab5b6f7f4a0054.jpg">
+                <h3>Dove</h3>
+                <p class="price">$7</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <!-- PRODUCT 1 -->
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/d4/2b/99/d42b99529c1fe04513f8b5d9a879c2e5.jpg">
+               
+                <h3>Dove scrub</h3>
+                <p class="price">$7</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+
+           
+
+            <!-- PRODUCT 3 -->
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/3b/e2/40/3be2408bf5aa15ddf285615a29a5617b.jpg">
+                <h3>natural</h3>
+                <p class="price">$2</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+
+            <!-- PRODUCT 4 -->
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/16/b2/90/16b290a74ab27f96b948775a553a3081.jpg">
+                <h3>glow scrub</h3>
+                <p class="price">$8</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+
+            <!-- PRODUCT 5 -->
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/60/7a/cc/607acc2cef08ca4e1fef3eee9736eee7.jpg">
+                <h3> black coffee</h3>
+                <p class="price">$3</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+
+              <!-- PRODUCT 6 -->
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/31/c4/9f/31c49fb7c85f8f6d5be34d207be1fcc9.jpg">
+                <h3>coffee</h3>
+                <p class="price">$3</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/f8/69/a8/f869a8e69b0242d4961ca16c59122bf6.jpg">
+                <h3>coconut</h3>
+                <p class="price">$5</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/94/cb/69/94cb692d5d9ebad7cd74ded83d6b337b.jpg">
+                <h3> pink scrub </h3>
+                <p class="price">$8</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/0c/d9/eb/0cd9ebb08ed855da5f079a2fc5577532.jpg">
+                <h3>coffee scrub</h3>
+                <p class="price">$8</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+             <div class="card">
+                <img src="https://i.pinimg.com/736x/92/9a/0d/929a0d5e775f21d09387247c9a3fc138.jpg">
+                <h3>B</h3>
+                <p class="price">$8</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            
+             <div class="card">
+                <img src="https://i.pinimg.com/736x/ed/a1/32/eda132800cae3b43022d5b78e0fd4ac7.jpg">
+                <h3>conute white</h3>
+                <p class="price">$8</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            
+             <div class="card">
+                <img src="https://i.pinimg.com/736x/6b/05/1c/6b051c6f307427d5a2d552efda3a0192.jpg">
+                <h3>coffee scrub</h3>
+                <p class="price">$8</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+            
+            
+        </div>
+
+        <!-- RESET BUTTON WITH CONFIRM -->
+         <a href="index.html" class="reset-btn" onclick="return confirmLeave()">Reset</a>
+
+
+    </div>
+
+</section>
+
+   
+    <title>Shop Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        p {
+            color: #777;
+        }
+
+        /* Product Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background:white;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 10px 0 6px;
+            font-size: 18px;
+        }
+
+        .card .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .reset-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 20px;
+            background: #ff2975;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+
+        .card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+    </style>
+    
+</head>
+
+<body>
+
+    <a href="index.html"></a>
+    
+
+   
+</body>
+</html>
